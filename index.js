@@ -257,12 +257,6 @@ addEventListener('click', (event) =>
         )
     });
 
-    addEventListener('touchstart', (event) => {
-        const touch = event.touches[0];
-        handleInteraction(touch.clientX, touch.clientY);
-        event.preventDefault(); // Prevent default touch behavior
-    })
-
 function startGame() {
         init();
         animate();
