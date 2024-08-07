@@ -256,7 +256,6 @@ addEventListener('click', (event) =>
             new Projectile(canvas.width / 2, canvas.height / 2, 5, 'white', velocity)
         )
     });
-
         
 function startGame() {
         init();
