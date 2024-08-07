@@ -256,7 +256,13 @@ addEventListener('click', (event) =>
             new Projectile(canvas.width / 2, canvas.height / 2, 5, 'white', velocity)
         )
     });
-        
+
+    addEventListener('touchstart', (event) => {
+        const touch = event.touches[0];
+        handleInteraction(touch.clientX, touch.clientY);
+        event.preventDefault(); // Prevent default touch behavior
+    })
+
 function startGame() {
         init();
         animate();
